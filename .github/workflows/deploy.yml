@@ -18,5 +18,4 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
           script:
-            cd /var/www/testa
-            git pull
+            cd /var/www/testa && git pull
