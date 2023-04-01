@@ -1,6 +1,4 @@
-# @format
-
-name: Deploy
+name: VPS Deploy CI
 
 on:
   push:
@@ -19,7 +17,6 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
-          script: ls
+          script:
             cd /var/www/testa
             git pull
-            
